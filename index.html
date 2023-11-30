@@ -4,24 +4,48 @@
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
 <title>Coding Gentleman</title>
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">">
 </head>
 <body>
-    <section> class="header">
         <nav>
-            <a href="index.html"><img src="logo.jpg" width="50" height="20" style="width: 5%; height: 5%;"></a>
             
-        <div class="nav-links">
+            
+         <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick=""hideMenu()""></i>
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">TEAMPAGE</a></li>
-                <li><a href="">OUR PROJECTS</a></li>
-                <li><a href="">LOGIN/REGISTER</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="teampage.html">TEAMPAGE</a></li>
+                <li><a href="projectpage.html">OUR PROJECTS</a></li>
+                <li><a href="login.html">LOGIN/REGISTER</a></li>
             </ul>
         </div>
+            <a href="index.html"><img src="logo.jpg" width="50" height="20" style="width: 10%; height: 10%;"></a>
+            <i class="fa fa-bars" onclick=""showMenu()""></i>
         </nav>
+    <div class="text-box">
+        <h1>AI Future Ahead</h1>
+        <p>We are a passionate team aiming to develop robust technology using multiple sources. As a young group, <br>we strive to excel our standards and look to work as one unit. </p>
+        <a href="teampage.html" class="btn btn-info" role="button">Learn about us</a>
 
+    </div>
 
     </section>
+    
+
+  
+
+    <script>
+        var navlinks = document.getElementById("navLinks")
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function showMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
 
 </body>
 </html>
