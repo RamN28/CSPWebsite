@@ -43,6 +43,9 @@ function login() {
     $username = $_POST['username'] ?? '';
     $password = $_POST['password'] ?? '';
 
+    error_log(print_r($_POST, true));
+
+
     if (!$username || !$password) {
         echo json_encode(['message' => 'Please enter both username and password.']);
         return;

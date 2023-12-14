@@ -24,7 +24,7 @@ async function signup() {
     const password = document.getElementById('loginPassword').value;
   
     if (!username || !password) {
-      alert('Please enter both username and password.');
+      alert('For love of god, Please enter both username and password.');
       return;
     }
   
