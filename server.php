@@ -40,14 +40,18 @@ function signup() {
 
 
 function login() {
-    $username = $_POST['username'] ?? '';
-    $password = $_POST['password'] ?? '';
-    $constantValue = $_POST['constantValue'] ?? '';
-    if (empty($_POST)) {
-        echo json_encode(['message' => 'No POST data received.']);
-        return;
-    }
-    
+
+    $json_data = file_get_contents('php://input');
+$data = json_decode($json_data, true);
+
+$constantValue = $data['constantValue'] ?? '';
+$username = $data['username'] ?? '';
+$password = $data['password'] ?? '';
+    //$username = $_POST['username'] ?? '';
+    //$password = $_POST['password'] ?? '';
+    //$constantValue = $_POST['constantValue'] ?? '';
+   
+   
     error_log('Constant Value: ' . $constantValue);
     error_log(print_r($_POST, true));
 
