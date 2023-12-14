@@ -27,7 +27,12 @@ async function signup() {
       alert('For love of god, Please enter both username and password.');
       return;
     }
+
+  
     const constantValue = 'exampleConstantValue';
+    console.log('Constant Value:', constantValue);
+    console.log('Username:', username);
+    console.log('Password:', password); 
 
     const response = await fetch('/server.php?action=login', {
       method: 'POST',
