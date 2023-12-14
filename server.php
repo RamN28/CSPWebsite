@@ -19,7 +19,7 @@ function signup() {
     $password = $data['password'] ?? '';
 
     if (!$username || !$password) {
-        echo json_encode(['message' => 'Bhenchod Please both username and password.']);
+        echo json_encode(['message' => 'Please both username and password.']);
         return;
     }
 
