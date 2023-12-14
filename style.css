@@ -387,7 +387,7 @@ footer {
   width: 100%;
 }
 nav Learn more about us {
-  color: #ffffff;
+  color: #000000;
 }
 .image-container {
   position: relative;
@@ -406,3 +406,4 @@ nav Learn more about us {
   text-align: center;
   padding: 20px; /* Adjust padding as needed */
 }
+
