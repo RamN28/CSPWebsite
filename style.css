@@ -344,3 +344,14 @@ nav Learn more about us {
   text-align: center;
   padding: 20px; /* Adjust padding as needed */
 }
+
+/* Add this CSS to your style sheet */
+body {
+  background-color: #ffffff; /* Replace #ffffff with the desired color code */
+}
+
+/* Optionally, you can add a transition effect for a smoother color change */
+body {
+  transition: background-color 0.5s ease;
+}
+
